@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "name": "Green",
+      "email": "userEmail@gmail.com",
+      "avatar": "https://randomuser.me/api/portraits/men/12.jpg",
+      "phone": "123098579",
+      "status": "true",
+      "city": "Dushanbe",
+      "id": "b09a"
+    },
+    {
+      "id": "b0a",
+      "name": "White",
+      "status": false,
+      "city": "Kulob",
+      "phone": "123098579",
+      "avatar": "https://randomuser.me/api/portraits/men/10.jpg",
+      "email": "userEmail@gmail.com"
+    },
+    {
+      "id": "0c35",
+      "name": "Red",
+      "status": true,
+      "city": "Bokhtar",
+      "phone": "123098579",
+      "avatar": "https://randomuser.me/api/portraits/men/13.jpg",
+      "email": "userEmail@gmail.com"
+    }
+  ]
+}
