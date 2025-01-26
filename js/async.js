@@ -56,7 +56,7 @@ async function getById(e) {
         let infoStatus =document.querySelector('.infoStatus')
         infoImg.src = data.avatar;
         infoName.innerHTML = data.name;
-        infoStatus.innerHTML = data.status;
+        infoStatus.innerHTML = data.status?"Active":"Inactive";
         infoEmail.innerHTML = data.email;
         infoCity.innerHTML =data.city;
         

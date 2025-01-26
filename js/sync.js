@@ -30,6 +30,7 @@ function getData(data) {
     tbody.innerHTML = ''
     data.forEach((e) => {
         let tr = document.createElement('tr')
+        let btnClose = document.querySelector('.btnClose2')
         //name        
         let trName = document.createElement('div')
         let tdName = document.createElement('td');
@@ -50,7 +51,7 @@ function getData(data) {
         //status
         let tdStat = document.createElement('td');
         let pStat = document.createElement('p');
-        pStat.innerHTML = e.status;
+        pStat.innerHTML = e.status?"Active":"Inactive";
         //phone
         let tdPhone = document.createElement('td');
         let pPhone = document.createElement('p');
@@ -95,7 +96,6 @@ function getData(data) {
                 }
                 editUser(idx, newUser)
             }
-            let btnClose = document.querySelector('.btnClose2')
             btnClose.onclick = () => {
                 editModal.close();
             }
@@ -106,21 +106,20 @@ function getData(data) {
         btnCheck.onclick = () => {
             checkUser(e)
         }
+        let btnClose2 = document.querySelector('.btnClose')
+        let btns = document.querySelector('.btns')
         let btnInfo = document.createElement('button')
         btnInfo.innerHTML = 'Info';
         btnInfo.onclick = () => {
             infoModal.showModal();
             getById(e);
-            let btnClose = document.querySelector('.btnClose');
-            btnClose.onclick = () => {
+            btnClose2.onclick = () => {
                 infoModal.close();
             };
+            btns.append(btnClose2)
         };
         
-        let btnClose = document.querySelector('.btnClose')
-        btnClose.onclick = () => {
-            infoModal.close()
-        }
+       
         tdPhone.append(pPhone)
         tdStat.append(pStat)
         tdCity.append(pCity)
@@ -130,6 +129,17 @@ function getData(data) {
         tr.append(tdName, tdCity, tdStat, tdPhone, tdAction)
         tbody.append(tr)
     });
+}
+let btnLight = document.querySelector('.btnLight')
+let btnDark = document.querySelector('.btnDark')
+let body = document.body
+
+btnLight.onclick = () => {
+    body.classList.remove('dark')
+}
+
+btnDark.onclick = () => {
+    body.classList.add('dark')
 }
 addBtn.onclick = () => {
     addModal.showModal();

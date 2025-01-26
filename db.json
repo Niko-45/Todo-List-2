@@ -6,22 +6,22 @@
       "avatar": "https://randomuser.me/api/portraits/men/12.jpg",
       "phone": "123098579",
       "status": "true",
-      "city": "Dushanbe",
+      "city": "Kulob",
       "id": "b09a"
     },
     {
-      "id": "b0a",
       "name": "White",
-      "status": false,
-      "city": "Kulob",
-      "phone": "123098579",
+      "email": "userEmail@gmail.com",
       "avatar": "https://randomuser.me/api/portraits/men/10.jpg",
-      "email": "userEmail@gmail.com"
+      "phone": "123098579",
+      "status": false,
+      "city": "Dushanbe",
+      "id": "b0a"
     },
     {
       "id": "0c35",
       "name": "Red",
-      "status": true,
+      "status": false,
       "city": "Bokhtar",
       "phone": "123098579",
       "avatar": "https://randomuser.me/api/portraits/men/13.jpg",

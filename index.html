@@ -10,6 +10,46 @@
 </head>
 
 <body>
+    <div class="header">
+        <h1>User List</h1>
+        <div>
+            <button class="btnAdd">Add</button>
+            <button class="btnLight btnAdd">LIGHT</button>
+            <button class="btnDark  btnAdd">DARK</button>
+        </div>
+    </div>
+   <div class="nav">
+    <div class="fieldset">
+        <fieldset>
+            <legend>Status</legend>
+            <select name="" class="filter" id=""></select>
+        </fieldset>
+        <fieldset>
+            <legend>City</legend>
+            <select name="" class="filterCity" id=""></select>
+        </fieldset>
+    </div>
+    <form action="" class="searchForm">
+        <input type="text" name="search" placeholder="Search...">
+        <button type="submit" class="btnAdd">Search</button>
+    </form>
+   </div>
+    <table class="box">
+        <thead>
+            <th>Name</th>
+            <th>City</th>
+            <th>Status</th>
+            <th>Phone</th>
+            <th>Action</th>
+        </thead>
+        <tbody class="tbody">
+
+        </tbody>
+    </table>
+    <dialog class="btnModal">
+        <div class="divBtn1">
+        </div>
+    </dialog>
     <dialog class="addModal">
         <form class="addForm" action="">
             <input type="text" name="addName">
@@ -26,8 +66,8 @@
                 <legend>City</legend>
                 <select name="" id="" class="City">
                     <option value="Dushanbe">Dushanbe</option>
-                    <option value="Dushanbe">Bokhtar</option>
-                    <option value="Dushanbe">Kulob</option>
+                    <option value="Bokhtar">Bokhtar</option>
+                    <option value="Kulob">Kulob</option>
                 </select>
             </fieldset>
             <fieldset>
@@ -47,41 +87,8 @@
         <p class="infoEmail"></p>
         <p class="infoCity"></p>
         <p class="infoStatus"></p>
-        <button class="btnClose">Close</button>
-    </dialog>
-    <button class="btnAdd">Add</button>
-    <form action="" class="searchForm">
-        <input type="text" name="search">
-        <button type="submit">Search</button>
-    </form>
-    <div class="fieldset">
-        <fieldset>
-            <legend>Status</legend>
-            <select name="" class="filter" id=""></select>
-        </fieldset>
-    <fieldset>
-        <legend>City</legend>
-        <select name="" class="filterCity" id=""></select>
-    </fieldset>
-</div>
-
-
-
-
-    <table class="box">
-        <thead>
-            <th>Name</th>
-            <th>City</th>
-            <th>Status</th>
-            <th>Phone</th>
-            <th>Action</th>
-        </thead>
-        <tbody class="tbody">
-
-        </tbody>
-    </table>
-    <dialog class="btnModal">
-        <div class="divBtn1"></div>
+        <p class="btnClose">Close</p>
+        <div class="btns"></div>
     </dialog>
     <script type="module" src="./js/main.js"></script>
 </body>
