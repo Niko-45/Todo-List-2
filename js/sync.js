@@ -1,4 +1,3 @@
-let box = document.querySelector('.box')
 let tbody = document.querySelector('.tbody')
 let btnModal = document.querySelector('.btnModal')
 let divBtn1 = document.querySelector('.divBtn1')
@@ -51,23 +50,12 @@ function getData(data) {
         //status
         let tdStat = document.createElement('td');
         let pStat = document.createElement('p');
-        pStat.innerHTML = e.status?"Active":"Inactive";
+        pStat.innerHTML = e.status ? "Active" : "Inactive";
         //phone
         let tdPhone = document.createElement('td');
         let pPhone = document.createElement('p');
         pPhone.innerHTML = e.phone;
         //action
-        let tdAction = document.createElement('td')
-        let btnImage = document.createElement('img');
-        btnImage.src = '/images/1.png'
-        btnImage.onclick = () => {
-            btnModal.showModal();
-            divBtn1.innerHTML = "";
-            divBtn1.append(btnDelete, btnEdit, btnCheck, btnInfo, btnClose);
-            btnClose.onclick = () => {
-                btnModal.close();
-            }
-        };
         let btnDelete = document.createElement('button')
         btnDelete.innerHTML = 'Delete';
         btnDelete.onclick = () => {
@@ -116,10 +104,20 @@ function getData(data) {
             btnClose2.onclick = () => {
                 infoModal.close();
             };
-            btns.append(btnClose2)
+            btns.append(btnCheck, btnDelete, btnEdit)
+            divBtn1.append(btnDelete, btnEdit, btnCheck, btnInfo, btnClose);
         };
-        
-       
+        let tdAction = document.createElement('td')
+        let btnImage = document.createElement('img');
+        btnImage.src = '/images/1.png'
+        btnImage.onclick = () => {
+            btnModal.showModal();
+            divBtn1.innerHTML = "";
+            divBtn1.append(btnDelete, btnEdit, btnCheck, btnInfo, btnClose);
+            btnClose.onclick = () => {
+                btnModal.close();
+            }
+        };
         tdPhone.append(pPhone)
         tdStat.append(pStat)
         tdCity.append(pCity)
@@ -133,11 +131,9 @@ function getData(data) {
 let btnLight = document.querySelector('.btnLight')
 let btnDark = document.querySelector('.btnDark')
 let body = document.body
-
 btnLight.onclick = () => {
     body.classList.remove('dark')
 }
-
 btnDark.onclick = () => {
     body.classList.add('dark')
 }
@@ -145,9 +141,14 @@ addBtn.onclick = () => {
     addModal.showModal();
     addForm.onsubmit = (e) => {
         e.preventDefault();
+        let city2 = document.querySelector('.City2')
         let newUser = {
             name: addForm['addName'].value,
             status: false,
+            email: addForm['addEmail'].value,
+            avatar: addForm['addImage'].value,
+            phone: Form['addPhone'].value,
+            city: city2.value
         };
         addUser(newUser);
     };

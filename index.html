@@ -52,7 +52,18 @@
     </dialog>
     <dialog class="addModal">
         <form class="addForm" action="">
-            <input type="text" name="addName">
+            <input type="text" placeholder="Name" name="addName">
+            <input type="text" placeholder="Email" name="addEmail">
+            <input type="text" placeholder="Url image" name="addImage">
+            <input type="text" placeholder="Phone" name="addPhone">
+            <fieldset>
+                <legend>City</legend>
+                <select name="" id="" class="City2">
+                    <option value="Dushanbe">Dushanbe</option>
+                    <option value="Bokhtar">Bokhtar</option>
+                    <option value="Kulob">Kulob</option>
+                </select>
+            </fieldset>
             <button type="submit">Add</button>
         </form>
     </dialog>
@@ -71,7 +82,7 @@
                 </select>
             </fieldset>
             <fieldset>
-                <legend>City</legend>
+                <legend>Status</legend>
                 <select name="" id="" class="Status">
                     <option value="true">true</option>
                     <option value="false">false</option>

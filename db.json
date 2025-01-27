@@ -1,31 +1,31 @@
 {
   "data": [
     {
-      "name": "Green",
-      "email": "userEmail@gmail.com",
-      "avatar": "https://randomuser.me/api/portraits/men/12.jpg",
-      "phone": "123098579",
-      "status": "true",
-      "city": "Kulob",
-      "id": "b09a"
-    },
-    {
       "name": "White",
       "email": "userEmail@gmail.com",
       "avatar": "https://randomuser.me/api/portraits/men/10.jpg",
       "phone": "123098579",
-      "status": false,
+      "status": "true",
       "city": "Dushanbe",
       "id": "b0a"
     },
     {
-      "id": "0c35",
       "name": "Red",
-      "status": false,
-      "city": "Bokhtar",
-      "phone": "123098579",
+      "email": "userEmail@gmail.com",
       "avatar": "https://randomuser.me/api/portraits/men/13.jpg",
-      "email": "userEmail@gmail.com"
+      "phone": "123098579",
+      "status": false,
+      "city": "Kulob",
+      "id": "0c35"
+    },
+    {
+      "name": "Blue",
+      "email": "userEmail@gmail.com",
+      "avatar": "https://randomuser.me/api/portraits/men/16.jpg",
+      "phone": "123098579",
+      "status": false,
+      "city": "Kulob",
+      "id": "0c3"
     }
   ]
 }
